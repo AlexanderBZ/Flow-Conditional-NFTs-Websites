@@ -18,7 +18,6 @@ export default function rentNFT() {
   const [rentedNftListData, setRentedNftListData] = useState([]);
 
   //Transactions
-
   const mintExampleNFT = useCallback(async () => {
     const result = await rentNFTTransactionsService.MintExampleNFT();
     console.log(result);
@@ -167,7 +166,6 @@ export default function rentNFT() {
   return (
     <Wrapper>
       <Navbar />
-
       <section className="nft flexColumn">
         <h1>Mint NFT Section</h1>
         <p>Example NFT</p>
